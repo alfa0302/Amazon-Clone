@@ -103,7 +103,6 @@ function orderHistoryHtml(orderGrid) {
       const id = item.productId;
       const product = products.find((product) => product.id === id);
       const deliveryDate = findDeliveryDate(item.deliveryOptionId);
-      console.log(deliveryDate.format());
       ordersHTML += `
             <div class="product-image-container">
               <img src="${product.image}" />
